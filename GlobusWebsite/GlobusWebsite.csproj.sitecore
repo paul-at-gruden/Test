@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <Site Server="globus" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="layouts\BrowserLayout.aspx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{04B42E90-4A9B-4E67-9E7C-A8DF16A9F562}</Item>
+    </File>
+    <File Include="layouts\BrowserLayout.aspx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="layouts\BrowserLayout.aspx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="sublayouts\PageHeader.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{FA859797-AE99-42A2-AA26-369A918B30E6}</Item>
+    </File>
+    <File Include="sublayouts\PageHeader.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="sublayouts\PageHeader.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="sublayouts\PageFooter.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{1302FA0B-3EC2-4B3B-9FCC-6952E64076A8}</Item>
+    </File>
+    <File Include="sublayouts\PageFooter.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="sublayouts\PageFooter.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="sublayouts\ThreeColumns.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{4D2F3858-8A2C-4427-BD83-09B3809D7383}</Item>
+    </File>
+    <File Include="sublayouts\ThreeColumns.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="sublayouts\ThreeColumns.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  </ItemGroup>
+</Project>
