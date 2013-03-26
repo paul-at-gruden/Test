@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
+using Sitecore.Diagnostics;
 
 namespace GlobusWebsite
 {

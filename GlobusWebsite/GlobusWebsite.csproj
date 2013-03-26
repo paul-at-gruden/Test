@@ -60,9 +60,16 @@
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="xmldiffpatch, Version=1.0.8.28, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\XmlDiffPatch\Bin\xmldiffpatch.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\Globus\favicon.ico" />
+    <Content Include="Content\images\logos\Avalon_Logo.gif" />
+    <Content Include="Content\images\logos\Globus_Logo.gif" />
+    <Content Include="Content\images\logos\Monograms_Logo.gif" />
     <Content Include="layouts\BrowserLayout.aspx" />
     <Content Include="sublayouts\PageFooter.ascx" />
     <Content Include="sublayouts\PageHeader.ascx" />
@@ -130,6 +137,10 @@
     <None Include="Content\less\utilities.less" />
     <None Include="Content\less\variables.less" />
     <None Include="Content\less\wells.less" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Web.config.old">
       <SubType>Designer</SubType>
     </None>
@@ -139,9 +150,11 @@
     <None Include="Web.config.Release.old">
       <DependentUpon>Web.config.old</DependentUpon>
     </None>
+    <None Include="XmlData\Tour.dtd" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Tools\DataImport.cs" />
+    <Compile Include="Classes\Tools\XmlDataImport.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -153,6 +166,11 @@
       <DependentUpon>BrowserLayout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="sublayouts\PageFooter.ascx.cs">
       <DependentUpon>PageFooter.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

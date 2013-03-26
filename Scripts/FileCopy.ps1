@@ -4,6 +4,8 @@ $env = "local";
 
 write-output("//////////////////////////////////////////////////////////////////////////////////////");
 
+Copy-Item -Path $source\web.config -Destination $destination -Force;
+
 # copy website dll files
 foreach ($dll in Get-ChildItem -Path $source\bin -Recurse)
 {

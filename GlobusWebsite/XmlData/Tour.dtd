@@ -1,0 +1,52 @@
+﻿<!ELEMENT Tour (Fields, Itinerary, ExtraNights*, Departures, OptionalExcursions)>
+<!ELEMENT Fields (Season, ProdCode, Name, TourStyle, Duration, StartCity, EndCity, Breakfast, Lunch, Dinner, Features)>
+<!ELEMENT Season (#PCDATA)>
+<!ELEMENT ProdCode (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT TourStyle (#PCDATA)>
+<!ELEMENT Duration (#PCDATA)>
+<!ELEMENT StartCity (#PCDATA)>
+<!ELEMENT EndCity (#PCDATA)>
+<!ELEMENT Breakfast (#PCDATA)>
+<!ELEMENT Lunch (#PCDATA)>
+<!ELEMENT Dinner (#PCDATA)>
+<!ELEMENT Features (#PCDATA)>
+
+<!ELEMENT Itinerary (ItineraryDay+)>
+<!ELEMENT ItineraryDay (DayNo, Description, Program)>
+<!ELEMENT DayNo (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Program (#PCDATA)>
+
+<!ELEMENT ExtraNights (ExtraNight*)>
+<!ELEMENT ExtraNight (Type, DateRanges)>
+<!ELEMENT Type (#PCDATA)>
+<!ELEMENT DateRanges (DateRange+)>
+<!ELEMENT DateRange (StartDate, EndDate, Price+)>
+<!ELEMENT StartDate (#PCDATA)>
+<!ELEMENT EndDate (#PCDATA)>
+<!ELEMENT Price (sgl|twn|tpl|au|nz|gsa)*>
+<!ELEMENT sgl (#PCDATA|au|nz|gsa)*>
+<!ELEMENT twn (#PCDATA|au|nz|gsa)*>
+<!ELEMENT tpl (#PCDATA|au|nz|gsa)*>
+<!ELEMENT au (#PCDATA)>
+<!ELEMENT nz (#PCDATA)>
+<!ELEMENT gsa (#PCDATA)>
+<!ELEMENT Departures (Departure+)>
+<!ELEMENT Departure (StartDate, EndDate, Guaranteed, Coach, Status, Price+, DepartureRoomTypes, OptionalCharges*, HotelList)>
+<!ELEMENT Guaranteed (#PCDATA)>
+<!ELEMENT Coach (#PCDATA)>
+<!ELEMENT Status (#PCDATA)>
+<!ELEMENT DepartureRoomTypes (sgl|tpl|twn)*>
+<!ELEMENT OptionalCharges (OptionalCharge*)>
+<!ELEMENT OptionalCharge (Type, Name, Price)>
+<!ELEMENT HotelList (Hotel*)>
+<!ELEMENT Hotel (DayNo, Name, Address, Phone, Fax, url)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT Fax (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT OptionalExcursions (OptionalExcursion*)>
+<!ELEMENT OptionalExcursion (ExcId, Location, Name, Description)>
+<!ELEMENT ExcId (#PCDATA)>
+<!ELEMENT Location (#PCDATA)>

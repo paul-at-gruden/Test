@@ -15,7 +15,6 @@
       <sc:Sublayout runat="server" id="subPageHeader" path="/sublayouts/PageHeader.ascx" />
       <div class="span12" style="margin: auto;">
         <sc:Placeholder key="main" runat="server" />
-        This is the sample<br />
         <asp:Label ID="lblTest" runat="server" />
         <sc:Sublayout runat="server" id="subPageFooter" path="/sublayouts/PageFooter.ascx" />
       </div>
