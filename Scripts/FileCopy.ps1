@@ -53,6 +53,13 @@ if (!(Test-Path $destination\xsl))
 
 Robocopy $source\xsl $destination\xsl *.xslt -MIR;
 
+if (!(Test-Path $destination\Webservices))
+{
+    write-output "Create Sublayout directory";
+    New-Item -ItemType directory -Path $destination\Webservices;
+}
+Robocopy $source\Webservices $destination\Webservices *.asmx -MIR;
+
 # copy data files (xsl)
 if (!(Test-Path $destination\XmlData))
 {
@@ -70,3 +77,4 @@ if (!(Test-Path $destination\Content))
 }
 
 Robocopy $source\Content $destination\Content -MIR;
+

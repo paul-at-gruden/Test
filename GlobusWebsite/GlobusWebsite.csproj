@@ -74,6 +74,7 @@
     <Content Include="sublayouts\PageFooter.ascx" />
     <Content Include="sublayouts\PageHeader.ascx" />
     <Content Include="sublayouts\ThreeColumns.ascx" />
+    <Content Include="Webservices\Testing.asmx" />
     <Content Include="XmlData\Avalon.xml" />
     <Content Include="XmlData\Cosmos.xml" />
     <Content Include="XmlData\Globus.xml" />
@@ -153,7 +154,6 @@
     <None Include="XmlData\Tour.dtd" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Tools\DataImport.cs" />
     <Compile Include="Classes\Tools\XmlDataImport.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -191,6 +191,10 @@
     </Compile>
     <Compile Include="sublayouts\ThreeColumns.ascx.designer.cs">
       <DependentUpon>ThreeColumns.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webservices\Testing.asmx.cs">
+      <DependentUpon>Testing.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
